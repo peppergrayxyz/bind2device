@@ -30,5 +30,10 @@ $ ./bind2device.sh tun0 curl https://ifconfig.me
 ## How
 A shared library is provided which can be used with LD_PRELOAD to change application behavior at run-time. The 'socket' call is intercepted and rewired to use the specified interface (SO_BINDTODEVICE).
 
+## Build
+```
+$ make
+```
+
 ## Credits
 https://unix.stackexchange.com/a/648791
